@@ -1,0 +1,8 @@
+def first_non_consecutive(arr):
+    #your code here
+    start = arr.pop(0)
+    for x in arr:
+        start += 1
+        if x != start:
+            return x
+    return None
